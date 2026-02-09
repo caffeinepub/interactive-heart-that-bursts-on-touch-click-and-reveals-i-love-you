@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the heart burst interaction and displays the \"I love you\" headline followed by a multi-line romantic love note after the animation completes, with a romantic gradient background and footer attribution.",
+  "frontend/src/components/HeartBurst.tsx": "Interactive heart component with burst animation featuring particle effects, ripples, and full keyboard accessibility (Enter/Space activation) that triggers a callback when the animation completes.",
+  "frontend/src/index.css": "Global styles defining a romantic OKLCH color palette (pinks, reds, warm tones), custom animations for heart beat/burst/particles/ripples, and reduced-motion support for accessibility.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color tokens mapped to CSS variables for consistent theming across light and dark modes."
+}

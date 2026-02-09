@@ -1,0 +1,35 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-09T23:25:02.093Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 0,
+    "items": [
+      {
+        "id": "REQ-7",
+        "summary": "Make the interactive heart-burst experience the page content served at panda-m9z.caffiene.xyz (i.e., visiting the domain loads this app at the root URL and the interaction works end-to-end).",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/main.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-implementation-plan.json",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

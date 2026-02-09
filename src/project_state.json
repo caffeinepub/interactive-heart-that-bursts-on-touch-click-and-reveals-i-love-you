@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Interactive webpage with a heart that bursts on touch/click and then displays a longer love message (including “I love you” plus a custom paragraph).",
+  "architectural_notes": [
+    "Deployment/hosting target specified: integrate the experience into panda-m9z.caffiene.xyz."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-ui-that-renders-a-large-centered-heart-and-supports-both-touch-and-mouse-interaction-tap-click-to-trigger-a-burst-animation",
+      "title": "Create a single-page UI that renders a large centered heart and supports both touch and mouse interaction (tap/click) to trigger a “burst” animation.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-heart-burst-animation-e-g-scaling-pop-fragment-particle-effect-or-similar-that-plays-once-when-the-heart-is-touched-clicked-and-ensure-the-heart-transitions-out-of-view-after-bursting",
+      "title": "Implement a heart “burst” animation (e.g., scaling/pop, fragment/particle effect, or similar) that plays once when the heart is touched/clicked, and ensure the heart transitions out of view after bursting.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-the-heart-finishes-bursting-display-the-text-i-love-you-in-english-as-the-primary-on-screen-message",
+      "title": "After the heart finishes bursting, display the text “I love you” in English as the primary on-screen message.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-distinctive-visual-theme-colors-typography-spacing-background-appropriate-for-a-romantic-heart-interaction-and-use-it-consistently-across-the-page-avoid-default-browser-styling",
+      "title": "Apply a coherent, distinctive visual theme (colors, typography, spacing, background) appropriate for a romantic/heart interaction, and use it consistently across the page (avoid default browser styling).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-accessibility-support-the-heart-interaction-must-be-usable-via-keyboard-enter-space-and-expose-an-accessible-label-and-animations-should-respect-reduced-motion-user-preferences",
+      "title": "Add basic accessibility support: the heart interaction must be usable via keyboard (Enter/Space) and expose an accessible label, and animations should respect reduced-motion user preferences.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-post-burst-message-so-that-after-the-heart-burst-completes-the-page-still-shows-i-love-you-as-the-primary-headline-and-then-displays-the-following-additional-message-text-after-it-preserving-line-breaks-i-know-i-m-not-perfect-i-know-that-i-make-mistakes-in-the-worst-way-possible-thank-you-for-tolerating-me-and-staying-beside-me-always-i-will-make-sure-that-you-will-never-be-sad-because-of-me-love-you-di-muah-to-my-wifey",
+      "title": "Update the post-burst message so that after the heart burst completes, the page still shows “I love you” as the primary headline and then displays the following additional message text after it (preserving line breaks):\n\nI know I'm not perfect , i know that I make mistakes in the worst way possible, thank you for tolerating me and staying beside me always.\nI will make sure that you will never be sad because of me 💓\n\nLove you di , muah 💋, to my wifey",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website with a heart that bursts on touch/click and shows \"I love you\" after bursting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update the post-burst on-screen message to include the provided longer love note (in addition to the existing “I love you” text)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add/embed the interactive heart burst page into the existing site/page at panda-m9z.caffiene.xyz",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Make the interactive heart-burst experience the page content served at panda-m9z.caffiene.xyz (i.e., visiting the domain loads this app at the root URL and the interaction works end-to-end).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Interactive heart that bursts on touch/click and reveals “I love you”",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "build_request",
+  "title": "Embed/deploy the interactive heart-burst page at panda-m9z.caffiene.xyz",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Make the interactive heart-burst experience the page content served at panda-m9z.caffiene.xyz (i.e., visiting the domain loads this app at the root URL and the interaction works end-to-end).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "And can you add this in this page \npanda-m9z.caffiene.xyz"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When navigating to https://panda-m9z.caffiene.xyz/, the user sees the heart-burst page (not a blank screen or missing assets).",
+        "The heart interaction (tap/click/keyboard) and post-burst message display work the same way on panda-m9z.caffiene.xyz as in the current build.",
+        "All static assets load correctly from the deployed location (no 404s due to incorrect base paths)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui or any other immutable paths listed in SYSTEM_CONTEXT.",
+    "Keep all backend logic in backend/main.mo (single-actor architecture); do not introduce additional backend services."
+  ],
+  "nonGoals": [
+    "Adding new animations or changing the existing heart/message behavior beyond what is required for the page to work on panda-m9z.caffiene.xyz.",
+    "Implementing new backend APIs or persistence."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

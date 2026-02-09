@@ -1,0 +1,33 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Deploy heart-burst experience at panda-m9z.caffiene.xyz root",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Ensure the heart-burst experience is served at the custom domain root and all assets resolve correctly when deployed to panda-m9z.caffiene.xyz.",
+      "acceptanceCriteria": [
+        "When navigating to https://panda-m9z.caffiene.xyz/, the user sees the heart-burst page (not a blank screen or missing assets).",
+        "The heart interaction (tap/click/keyboard) and post-burst message display work the same way on panda-m9z.caffiene.xyz as in the current build.",
+        "All static assets load correctly from the deployed location (no 404s due to incorrect base paths)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Adjust the HTML bootstrapping to be robust for deployment at the custom domain root by ensuring correct base URL handling and avoiding absolute dev-only paths that could cause asset resolution issues in production (e.g., prefer relative module entry reference and/or set an explicit base href for root hosting)."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Confirm the React entrypoint reliably mounts the app at the root container for production builds, and that providers do not block rendering of the heart-burst experience when deployed at panda-m9z.caffiene.xyz (no redirect-to-auth or environment-dependent gating)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Verify the heart-burst experience is the root page content (no routing/conditional wrappers that could hide it on initial load) and that deployed-host assumptions (e.g., link building using window.location.hostname) do not break rendering or asset loading on panda-m9z.caffiene.xyz."
+        }
+      ]
+    }
+  ]
+}

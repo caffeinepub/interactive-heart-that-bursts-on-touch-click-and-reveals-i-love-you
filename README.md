@@ -1,2 +1,3 @@
-# interactive-heart-that-bursts-on-touch-click-and-reveals-i-love-you
-Exported from Caffeine project: Interactive heart that bursts on touch/click and reveals “I love you”
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

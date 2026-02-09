@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor with no methods.",
+  "feature_evidence.json": "Feature evidence report placeholder with no listed features.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries of core frontend files for reference.",
+  "frontend/index.css": "Tailwind base theme defining OKLCH color variables and dark mode variants with global background and text styles.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React component handling heart burst interaction and displaying the love message and footer.",
+  "frontend/src/components/HeartBurst.tsx": "Interactive heart component creating burst particles, ripple effects, and calling a completion callback.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor tied to Internet Identity authentication.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity auth context, login handling, identity loading, and status tracking.",
+  "frontend/src/index.css": "Tailwind-based global stylesheet defining a romantic OKLCH palette, dark mode, and utility classes.",
+  "frontend/src/main.tsx": "Bootstraps the React app with QueryClient and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom color palettes, container settings, extended animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Stores project metadata, feature definitions, and state information for a romantic heart-burst webpage project."
+}
